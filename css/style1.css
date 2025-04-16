@@ -1,0 +1,503 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root { /* stockage */
+    --open:"Open Sans", serif;
+    --montserrat:'Montserrat', sans-serif;
+    --roboto:'Roboto', sans-serif;
+    --primary-blue:#27697c;
+    --main-text:#000;
+    --white-color:#fff;
+    --grey-color:#859399;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: var(--montserrat); /* police d'ecriture */
+    font-size: 40px; /* taille */
+    font-weight: 700; /* l'épaisseur du texte */
+    text-transform: uppercase; /* texte maj */
+}
+
+h2 {
+    font-family: var(--montserrat); /* police d'ecriture */
+    font-size: 20px; /* taille */
+    font-weight: 600; /* l'épaisseur du texte */
+}
+
+h3 {
+    font-family: var(--montserrat); /* police d'ecriture */
+    font-size: 30px; /* taille */
+    text-transform: uppercase; /* texte maj */
+    font-weight: 700; /* l'épaisseur du texte */
+}
+
+p {
+    font-family: var(--open); /* police d'ecriture */
+    font-size: 16px; /* taille */
+    line-height: 2; /* ??? */
+}
+
+a {
+    font-family: var(--open); /* police d'ecriture */
+    font-size: 16px; /* taille */
+    transition: all 0.2s ease; /* ... */
+    text-decoration: none; /* trait sous les liens */
+    color:var(--main-text); /* couleur du texte */
+}
+
+img{
+    width:100%;
+}
+
+.container-1440{
+    max-width: 1440px;
+    margin:auto;
+    padding:0 15px;
+}
+
+
+/* header */
+
+#burgermenu{
+    display: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 100px;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+
+header img {
+    width:200px;
+    margin:7px 0;
+}
+
+nav ul {
+    list-style: none; /* enleve les puces */
+    display: flex;
+    justify-content: end;
+    padding-left: 0;
+}
+
+nav ul li a{
+    padding: 48px;
+    text-transform: uppercase; /* texte maj */
+}
+
+nav ul li a:hover{
+    background-color: var(--primary-blue); /* couleur de fond du texte */
+    color:var(--white-color); /* couleur du texte */
+}
+
+
+/* Main Section 1 Introduction */  /*fini */
+
+#Introduction {
+    background-image:url(../img/image-batiment.jpg); 
+    height: 700px; /* hauteur */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* image qui reste fixe */
+    display: flex;
+}
+
+#Introduction article {
+    max-width: 600px;
+    padding: 50px 15px;
+    margin:auto;
+    background-color: #27697CE3; /* couleur de fond du texte */
+    text-align: center; /*alignement du texte au centre */
+    color:var(--white-color); /* couleur du texte */
+}
+
+#Introduction p {
+    margin: 20px 0;
+    font-size: 18px; /*taille du texte */
+    font-family: var(--montserrat); /* police d'ecriture */
+    font-weight: 600; /* l'épaisseur du texte */
+}
+
+/* btn */
+.btn-white{
+    font-size: 16px; /* taille du texte */
+    font-weight: 500; /* l'épaisseur du texte */
+    font-family:var(--roboto); /* police d'ecriture */
+    color:var(--primary-blue); /* couleur du texte */
+    background-color: var(--white-color); /* couleur de fond du texte */
+    padding:12px 24px;
+    display: inline-block; /* ??? */
+    border:1px solid var(--white-color); /* bordure de 1px  solid de couleur white */
+}
+/* btn */
+.btn-white:hover{
+    background-color: transparent;
+    scale:1.1; /* ??? */
+    color:var(--white-color); /* couleur du texte */
+}
+
+
+/* Main Section 2 MalMaison */
+
+#malmaison{
+    margin: 200px auto;
+    max-width: 1440px;
+}
+
+#malmaison > div:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:100px;
+    align-items: center;
+}
+
+#malmaison .contentzone{
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 20px;
+}
+
+#malmaison hr{
+    height:1px;
+    background-color: var(--primary-blue);
+    margin-top: 13px;
+}
+
+#malmaison h2{
+    color:var(--primary-blue);
+}
+
+#malmaison .titlezone{
+    margin-bottom: 40px;
+}
+
+#malmaison .contentzone p{
+    margin-bottom: 20px;
+}
+
+#malmaison > div:nth-child(2){
+    display: flex;
+    gap:20px;
+    justify-content: space-around;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#malmaison>div:nth-child(2) h4{
+    font-family: var(--montserrat);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#malmaison>div:nth-child(2) i{
+    color:var(--primary-blue);
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+#malmaison img {
+    height: 654.78px;
+    min-height: 1px;
+}
+
+/* btn */
+.btn-blue{
+    font-size: 16px; /* taille du texte */
+    font-weight: 500; /* l'épaisseur du texte */
+    font-family:var(--roboto); /* police d'ecriture */
+    color:var(--white-color); /* couleur du texte */
+    background-color: var(--primary-blue); /* couleur de fond du texte */
+    padding:12px 24px;
+    display: inline-block;
+    border:1px solid var(--primary-blue); /* bordure de 1 px solid de couleur blue */
+}
+
+/* btn */
+.btn-blue:hover{
+    background-color: transparent;
+    scale:1.1; /* ??? */
+    color:var(--primary-blue); /* couleur du texte */
+}
+
+
+/* Main Section 3 Meaux */
+
+#meaux{
+    background-color: var(--primary-blue); /* couleur de fond du texte */
+    color:var(--white-color); /* coleur du texte */
+}
+
+#meaux img{
+    height: 200px;
+    object-fit: cover; /* ?? */
+}
+
+#meaux > div > div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+
+#meaux img:nth-child(5){
+    grid-column:1/3;
+}
+
+#meaux > div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:100px;
+    align-items:center;
+    padding: 80px 15px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#meaux h3{
+    margin-bottom: 40px;
+}
+
+#meaux p{
+    margin-bottom: 20px;
+}
+
+
+/* Main Section 4 */
+
+#Section4 {
+    text-align: center;
+    padding: 80px 15px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#Section4 h2 {
+    color: var(--primary-blue);
+}
+
+#Section4 > div {
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+#Section4 img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Section4 h3 {
+    font-size: 16px; /* taille du texte */
+    font-weight: 300; /* l'épaisseur du texte */
+    font-family: var(--open); /* police d'écriture */
+    text-transform: uppercase; /* texte maj */
+    margin-top: 20px;
+}
+
+#Section4 a:hover img {
+    filter: grayscale(100%); /* ?? */
+    transition: all0.2 ease in-out;
+}
+
+
+/* btn */
+.btn-blue-2{
+    font-size: 16px; /* taille du texte */
+    font-weight: 500; /* l'épaisseur du texte */
+    font-family:var(--roboto); /* police d'ecriture */
+    color:var(--white-color); /* couleur du texte */
+    background-color: var(--primary-blue); /* couleur de find du texte */
+    padding:12px 24px;
+    display: inline-block;
+    border:1px solid var(--primary-blue); /* bordure de 1 px solid de couleur blue */
+    align-items: center;
+}
+
+/* btn */
+.btn-blue-2:hover{
+    background-color: transparent;
+    scale:1.1; /* ??? */
+    color:var(--primary-blue); /* couleur du texte */
+}
+
+
+/* Main Section 5 */
+
+
+#Section5 {
+    background-color: var(--grey-color); /* couleur de fond du texte */
+    padding: 100px 0;
+    color: var(--white-color); /* couleur du texte */
+}
+
+#Section5 > div {
+    max-width: 680px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+#Section5 form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#entreprise,
+textarea,
+label{
+    grid-column: 1/3;
+}
+
+input,textarea{
+    padding:12px 16px;
+    outline: none;
+    border:1px solid var(--primary-blue); /* bordure de 1px solid de couleur blue */
+}
+
+::placeholder{
+    font-family: var(--open); /* police d'écriture */
+    font-size: 16px; /* taille du texte */
+    color:var(--main-text); /* couleur du texte */
+}
+
+label{
+    font-family: var(--open); /* police d'écriture */
+    font-size: 16px; /* taille du texte */
+}
+
+form .btn-white-2{
+    width:fit-content;
+    cursor: pointer;
+    transition:all 0.2s ease;
+    color: var(--primary-blue); /* couleur du texte */
+}
+
+form .btn-white-2:hover{
+    transition:all 0.2s ease;
+    background-color: var(--primary-blue); /* couleur de fond du texte */
+    color: var(--white-color); /* couleur du texte */
+}
+
+#Section5 h3{
+    margin-bottom: 40px;
+}
+
+
+/* footer */  
+
+footer {
+    background-color: var(--primary-blue); /* couleur de fond du texte */
+    text-align: center; /*alignement du texte au centre */
+    color:var(--white-color); /* couleur du texte */
+    margin: 0px auto;
+}
+
+footer a{
+    color:var(--white-color); /* couleur du texte */
+}
+
+footer a:hover{
+    opacity: 0.7; /* opacité du texte */
+}
+
+
+/* Responsive */
+
+/* Responsive intermédiaire */
+
+@media screen and (max-width:1440px){
+    nav ul li a{
+        padding:48px 20px;
+    }
+    
+    header{
+        gap:10px;
+    }
+}
+
+
+/* Tablette */
+
+@media screen and (max-width:1024px){
+    #burgermenu{
+        display: flex;
+        justify-content: end;
+        font-size: 30px; /* taille du Font awesome */
+        cursor: pointer; /* Le curseur est un pointeur qui indique un lien. Généralement une image d’une main pointée */
+    }
+
+    nav{
+        display: none; /* display:none removes the element from the document */
+    }
+
+    #malmaison > div:nth-child(1),
+    #meaux > div{
+        grid-template-columns: 1fr;
+    }
+
+    #meaux > div > div{
+        grid-row:2; 
+        /* La propriété CSS grid-row est un raccourci permettant de spécifier les lignes de la grille où un élément de la grille commence et se termine dans une mise en page de type grille, et ce en une seule déclaration */
+    }
+    
+    #Section4 {    
+       gap: 20%;
+    }
+
+}
+
+
+/* Téléphone */
+
+
+@media screen and (max-width:767px){
+    h1{
+        font-size: 40px; /* taille du texte */
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    #malmaison .contentzone,
+    #meaux > div > div,
+    #Section5 form{
+        grid-template-columns: 1fr;
+    }
+
+   #Section4 {
+    gap: 20%;
+   }
+
+    #entreprise,
+    textarea,
+    label,
+    #meaux img:nth-child(5){
+        grid-column: 1;
+    }  
+
+    #malmaison > div:nth-child(2){
+        flex-direction: column; /* icones verticale */
+    }
+
+    #Section4 > div{
+        grid-template-columns: 1fr;
+    }
+}
